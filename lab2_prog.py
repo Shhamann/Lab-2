@@ -53,7 +53,8 @@ def xml_parse():
                 case 'NumCode': NumCode = child.firstChild.data
                 case 'CharCode': CharCode = child.firstChild.data
         ansDict[NumCode] = CharCode
-    [print(k, v) for k, v in ansDict.items()]
+    for i, j in ansDict.items():
+        print(i, j) 
 
 def genre(sp):
     m = set()
